@@ -2,10 +2,10 @@ import React from "react";
 
 const AnalyticsTable = ({ data }) => {
   return (
-    <div className="container mx-auto overflow-x-auto">
+    <div className="container mx-auto overflow-x-auto h-[400px]">
       <table className="min-w-full text-left">
         <thead>
-          <tr className="text-gray-500 border-b border-gray-200">
+          <tr className="text-gray-500 border-b border-gray-200 sticky top-0 z-10 bg-white">
             <th className="py-4 px-6 w-1/12">Page</th>
             <th className="py-4 px-6">Pageviews</th>
             <th className="py-4 px-6">Unique pageviews</th>
