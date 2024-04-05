@@ -6,7 +6,7 @@ import Hero from "./component/hero";
 function App() {
   return (
     <div>
-      {/* <Sidebar /> */}
+      <Sidebar />
       <Hero />
     </div>
   );
