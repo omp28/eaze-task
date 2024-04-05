@@ -4,7 +4,7 @@ import DashboardActions from "./heroSubModule/DashboardActions";
 
 const hero = () => {
   return (
-    <div>
+    <div className=" bg-slate-200">
       <Nav />
       <DashboardActions />
     </div>
