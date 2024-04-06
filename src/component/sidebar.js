@@ -11,7 +11,7 @@ import { IoCubeOutline } from "react-icons/io5";
 
 function Sidebar() {
   return (
-    <div className="flex flex-col px-6 pt-9 pb-5 mx-auto mt-4 w-full text-lg text-white whitespace-nowrap bg-cyan-800 shadow-sm rounded-3xl max-md:px-5 max-md:mt-10">
+    <div className="flex flex-col px-6 pt-9 pb-5 mx-auto mt-4 ml-4 w-full h-full text-lg text-white whitespace-nowrap bg-cyan-800 shadow-sm rounded-3xl max-md:px-5 max-md:mt-10">
       <IoChevronBackSharp className="w-8 h-8 self-end" />
       <div className="flex gap-3 justify-between mt-7 text-5xl font-semibold">
         <IoCubeOutline />

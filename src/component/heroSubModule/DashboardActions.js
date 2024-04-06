@@ -5,24 +5,25 @@ import Card from "./Card";
 function DashboardActions() {
   return (
     <>
-      <div className="flex gap-2.5 justify-between px-1 mt-7 text-lg font-medium leading-5 text-center text-neutral-500 max-md:flex-wrap">
+      <div className="flex gap-2.5 justify-between px-1 mt-8 text-lg font-medium leading-5 text-center text-neutral-500 max-md:flex-wrap">
         <div className="flex flex-col justify-center text-white bg-cyan-800 rounded-3xl">
-          <button className="flex gap-2 justify-between px-4 py-2">
+          <button className="flex gap-2 justify-between px-4 py-4">
             <FaPlus />
             <div>Create Report</div>
           </button>
         </div>
-        <button className="justify-center px-6 py-2 text-cyan-800 border border-solid border-neutral-500 rounded-3xl max-md:px-5">
+        <button className="justify-center px-6 py-4 text-cyan-800 border border-solid border-neutral-500 rounded-3xl max-md:px-5">
           Share this dashboard
         </button>
-        <button className="justify-center px-6 py-2 border border-solid border-neutral-500 rounded-3xl max-md:px-5">
+        <button className="justify-center px-6 py-4 border border-solid border-neutral-500 rounded-3xl max-md:px-5">
           Select Duration
         </button>
-        <button className="justify-center px-6 py-2 border border-solid border-neutral-500 rounded-3xl max-md:px-5">
+        <button className="justify-center px-6 py-4 border border-solid border-neutral-500 rounded-3xl max-md:px-5">
           Compare with Duration
         </button>
       </div>
-      <div className="flex flex-wrap justify-center gap-4">
+
+      <div className="grid grid-cols-4 gap-4 mt-8">
         <Card
           title="EFFICIENCY"
           description="Lorem Ipsum"
@@ -53,7 +54,7 @@ function DashboardActions() {
         />
       </div>
 
-      <div className="mt-7 max-md:max-w-full">
+      <div className="mt-8 max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0">
           <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col grow justify-center p-6 mx-auto w-full text-base leading-5 text-black bg-white rounded-xl shadow-sm max-md:px-5 max-md:mt-3">

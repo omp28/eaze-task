@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DateSelector from "./DateSelector";
 import AnalyticsTable from "./AnalyticsTable";
+import e from "express";
 
 const AnalyticsData = () => {
   const [selectedPeriod, setSelectedPeriod] = useState("today");
@@ -14,11 +15,15 @@ const AnalyticsData = () => {
       {
         page: "/Defect Arrival Rate",
         pageviews: "356,928",
+        pageviewsPercentage: "12.34%",
         uniquePageviews: "275,588",
+        uniquePageviewsPercentage: "9.45%",
         avgTimeOnPage: "00:03:51",
         entrances: "315,643",
+        entrancesPercentage: "10.23%",
         exitRate: "39.84%",
         pageValue: "$19,983",
+        pageValuePercentage: "8.23%",
       },
       {
         page: "/Fixed Rate",
@@ -252,7 +257,6 @@ const AnalyticsData = () => {
   return (
     <div>
       <DateSelector handlePeriodChange={handlePeriodChange} />
-      <div className="font-bold text-lg mb-4">Analytics Data</div>
       <AnalyticsTable data={dataForPeriod[selectedPeriod]} />
     </div>
   );
