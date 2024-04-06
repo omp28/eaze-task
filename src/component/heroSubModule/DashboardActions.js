@@ -23,7 +23,7 @@ function DashboardActions() {
         </button>
       </div>
 
-      <div className="grid grid-cols-4 gap-4 mt-8">
+      <div className="grid grid-cols-4 gap-4 mt-8 ">
         <Card
           title="EFFICIENCY"
           description="Lorem Ipsum"
@@ -62,7 +62,7 @@ function DashboardActions() {
                 <div className="mt-4">On Time</div>
                 <div className="shrink-0 bg-green-500 rounded-full h-[15px] w-[15px]" />
               </div>
-              <div className="flex gap-0 mt-3.5">
+              <div className="flex gap-0 mt-3.5 justify-between">
                 <div className="font-light">Completed Iteratiions</div>
                 <div className="font-semibold text-right">7</div>
               </div>
@@ -82,7 +82,7 @@ function DashboardActions() {
                 <div className="mt-4">On Scope</div>
                 <div className="shrink-0 w-4 bg-green-500 rounded-full h-[15px]" />
               </div>
-              <div className="flex gap-0 mt-4">
+              <div className="flex gap-0 mt-4 justify-between">
                 <div className="font-light">Story Points Done</div>
                 <div className="font-semibold text-right">3200</div>
               </div>
@@ -103,7 +103,7 @@ function DashboardActions() {
                 <div className="text-base font-semibold leading-5">
                   On Velocity
                 </div>
-                <div className="flex gap-0 mt-4">
+                <div className="flex gap-0 mt-4 justify-between">
                   <div className="font-light">Average Velocity</div>
                   <div className="font-semibold text-right">428.6</div>
                 </div>

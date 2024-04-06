@@ -4,7 +4,7 @@ import download from "../../component/image/analytics.png";
 
 const AnalyticsTable = ({ data }) => {
   return (
-    <div className="container mx-auto overflow-x-auto h-[400px] mb-12 bg-white">
+    <div className="container mx-auto overflow-x-auto h-[60vh] mb-12 bg-white">
       <table className="min-w-full text-left">
         <thead>
           <tr className="text-gray-600 border-b border-gray-200 sticky top-0 z-10 bg-white">
