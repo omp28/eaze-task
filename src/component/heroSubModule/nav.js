@@ -31,18 +31,18 @@ function Nav() {
         </div>
       </div>
       <div className="flex gap-3.5 items-center">
-        <div className="flex justify-center items-center self-stretch p-2 my-auto w-8 h-8 bg-white rounded-xl shadow-lg">
+        <button className="flex justify-center items-center self-stretch p-2 my-auto w-8 h-8 bg-white rounded-xl shadow-lg">
           <IoMdNotificationsOutline className=" text-[#3D657D]" />
-        </div>
-        <div className="flex justify-center items-center self-stretch p-2 my-auto bg-white rounded-xl shadow-lg h-8 w-8">
+        </button>
+        <button className="flex justify-center items-center self-stretch p-2 my-auto bg-white rounded-xl shadow-lg h-8 w-8">
           <AiTwotoneMessage className=" text-[#3D657D]" />
-        </div>
-        <div className="flex justify-center items-center self-stretch p-2 my-auto w-8 h-8 bg-white rounded-xl shadow-lg">
+        </button>
+        <button className="flex justify-center items-center self-stretch p-2 my-auto w-8 h-8 bg-white rounded-xl shadow-lg">
           <IoSettingsOutline className=" text-[#3D657D]" />
-        </div>
-        <div className="flex justify-center items-center self-stretch p-2 my-auto w-10 h-10 bg-white rounded-full shadow-lg">
+        </button>
+        <button className="flex justify-center items-center self-stretch p-2 my-auto w-10 h-10 bg-white rounded-full shadow-lg">
           <FaRegUserCircle className=" text-[#3D657D]" />
-        </div>
+        </button>
       </div>
     </div>
   );

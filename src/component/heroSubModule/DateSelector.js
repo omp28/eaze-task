@@ -2,11 +2,11 @@ import React from "react";
 
 const DateSelector = (props) => {
   return (
-    <div className="flex items-center justify-between mt-8">
-      <div className="font-bold text-lg">Analytics Dashboard</div>
+    <div className="flex items-center justify-between mt-8 bg-white border-b-2 border-gray-200 py-2 ">
+      <div className="text-lg ml-6">Pageviews</div>
       <div className="flex space-x-0">
         <button
-          className={` border-t-2 border-b-2 border-l-2 border-gray-400 hover:bg-blue-100 duration-150 px-3 rounded-l-md  
+          className={` border-t-[1px] border-b-[1px] border-l-[1px] border-gray-400 hover:bg-blue-100 duration-150 px-3 rounded-l-md focus:bg-blue-100 
                      font-medium ${
                        props.selectedPeriod === "today"
                          ? "bg-blue-500 text-white"
@@ -17,8 +17,8 @@ const DateSelector = (props) => {
           Today
         </button>
         <button
-          className={` border-t-2 border-b-2 border-l-2 border-gray-400 hover:bg-blue-100 duration-150 px-3   
-                     font-medium ${
+          className={` border-t-[1px] border-b-[1px] border-l-[1px] border-gray-400 hover:bg-blue-100 duration-150 px-3   
+                     font-medium focus:bg-blue-100  ${
                        props.selectedPeriod === "yesterday"
                          ? "bg-blue-500 text-white"
                          : ""
@@ -28,8 +28,8 @@ const DateSelector = (props) => {
           Yesterday
         </button>
         <button
-          className={` border-t-2 border-b-2 border-l-2 border-gray-400 hover:bg-blue-100 duration-150 px-3   
-                     font-medium ${
+          className={` border-t-[1px] border-b-[1px] border-l-[1px] border-gray-400 hover:bg-blue-100 duration-150 px-3   
+                     font-medium focus:bg-blue-100  ${
                        props.selectedPeriod === "week"
                          ? "bg-blue-500 text-white"
                          : ""
@@ -39,8 +39,8 @@ const DateSelector = (props) => {
           Week
         </button>
         <button
-          className={` border-t-2 border-b-2 border-l-2 border-gray-400 hover:bg-blue-100 duration-150 px-3   
-                     font-medium ${
+          className={` border-t-[1px] border-b-[1px] border-l-[1px] border-gray-400 hover:bg-blue-100 duration-150 px-3   
+                     font-medium focus:bg-blue-100  ${
                        props.selectedPeriod === "month"
                          ? "bg-blue-500 text-white"
                          : ""
@@ -50,8 +50,8 @@ const DateSelector = (props) => {
           Month
         </button>
         <button
-          className={` border-t-2 border-b-2 border-l-2 border-gray-400 hover:bg-blue-100 duration-150 px-3   
-                     font-medium ${
+          className={` border-t-[1px] border-b-[1px] border-l-[1px] border-gray-400 hover:bg-blue-100 duration-150 px-3   
+                     font-medium focus:bg-blue-100  ${
                        props.selectedPeriod === "quarter"
                          ? "bg-blue-500 text-white"
                          : ""
@@ -61,7 +61,7 @@ const DateSelector = (props) => {
           Quarter
         </button>
         <button
-          className={` border-t-2 border-b-2 border-l-2 border-r-2 border-gray-400 hover:bg-blue-100 duration-150 px-3 rounded-r-md   
+          className={` border-t-[1px] border-b-[1px] border-l-[1px] border-r-[1px] border-gray-400 hover:bg-blue-100 duration-150 px-3 rounded-r-md  focus:bg-blue-100   
                      font-medium ${
                        props.selectedPeriod === "year"
                          ? "bg-blue-500 text-white"
@@ -73,8 +73,8 @@ const DateSelector = (props) => {
         </button>
         <div className=" pl-4">
           <select
-            className=" border-2 rounded-md border-gray-400 hover:bg-gray-300 px-3 py-2 
-                     font-medium"
+            className=" border-[1px] rounded-md border-gray-400  px-3 py-2  
+                     font-medium hover:bg-blue-100 duration-150 focus:outline-none focus:bg-blue-100 "
             value={props.selectedPeriod}
             onChange={(e) => props.handlePeriodChange(e.target.value)}
           >

@@ -6,19 +6,19 @@ function DashboardActions() {
   return (
     <>
       <div className="flex gap-2.5 justify-between px-1 mt-8 text-lg font-medium leading-5 text-center text-neutral-500 max-md:flex-wrap">
-        <div className="flex flex-col justify-center text-white bg-cyan-800 rounded-3xl">
-          <button className="flex gap-2 justify-between px-4 py-4">
+        <div className="flex flex-col justify-center   rounded-3xl">
+          <button className="flex justify-center px-6 py-4 border border-solid border-neutral-500 rounded-3xl max-md:px-5 hover:bg-cyan-800 hover:text-white hover:duration-500 focus:bg-cyan-800 focus:text-white">
             <FaPlus />
-            <div>Create Report</div>
+            <div className=" ml-2">Create Report</div>
           </button>
         </div>
-        <button className="justify-center px-6 py-4 text-cyan-800 border border-solid border-neutral-500 rounded-3xl max-md:px-5">
+        <button className="justify-center px-6 py-4 border border-solid border-neutral-500 rounded-3xl max-md:px-5 hover:bg-cyan-800 hover:text-white hover:duration-500 focus:bg-cyan-800 focus:text-white">
           Share this dashboard
         </button>
-        <button className="justify-center px-6 py-4 border border-solid border-neutral-500 rounded-3xl max-md:px-5">
+        <button className="justify-center px-6 py-4 border border-solid border-neutral-500 rounded-3xl max-md:px-5 hover:bg-cyan-800 hover:text-white hover:duration-500 focus:bg-cyan-800 focus:text-white">
           Select Duration
         </button>
-        <button className="justify-center px-6 py-4 border border-solid border-neutral-500 rounded-3xl max-md:px-5">
+        <button className="justify-center px-6 py-4 border border-solid border-neutral-500 rounded-3xl max-md:px-5 hover:bg-cyan-800 hover:text-white hover:duration-500 focus:bg-cyan-800 focus:text-white">
           Compare with Duration
         </button>
       </div>
